@@ -9,8 +9,9 @@
 
 	.hero{
 		padding-top: 100px;
-		gap: 10px;
+		gap: 50px;
 		display: grid;
+		padding-bottom: 50px;
 	}
 	.hero .text .p1 {
 		font-size: 3.0rem;
@@ -41,6 +42,18 @@
 	.hero .text  {
 		width: 100%;
 		text-align: center;
+	}
+
+	.blog {
+		padding-bottom:5px;
+	}
+
+	.nextline {
+		padding: 0px 0;
+	}
+
+	.uline {
+		width: 40%;
 	}
 }
 

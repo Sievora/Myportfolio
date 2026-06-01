@@ -19,6 +19,9 @@ body {
 	margin: auto;
 	color: #f4eef2;
 	position: relative;
+	background-image: url('line.webp');
+	backdrop-filter: opacity(0.1);
+	background-color: #212437;
 }
 .pagelink {
 	display: none;
@@ -327,7 +330,7 @@ header .header .text a:active {
 .blogtext {
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
+	gap: 10px;
 }
 
 .p {
@@ -352,7 +355,6 @@ h1 {
 	display: flex;
 	width: 100%;
 	margin: auto;
-	justify-content: ;
 	gap: 40px;
 
 }
@@ -363,7 +365,7 @@ h1 {
 	overflow: hidden;
 	border-radius: 30px;
 	border: #ee843c solid 2px;
-	height: px;
+	
 	position: relative;
 	background: rgba(238, 132, 60, 0.3);
 	padding-bottom: 0px;
@@ -377,6 +379,13 @@ h1 {
 
 }
 
+.nextline {
+	border-bottom: 3px solid #2b2e41;
+	width: 100%;
+	padding: 30px 0;
+	margin: auto;
+	background: transparent;
+}
 
 .contact {
 	padding-top: 50px ;
