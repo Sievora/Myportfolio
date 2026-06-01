@@ -1,0 +1,210 @@
+@media (max-width: 1248px) {
+	.hero .text  {
+		width: 60%;
+		gap: 10px;
+	}
+}
+
+@media (max-width: 1145px) {
+
+	.hero{
+		padding-top: 100px;
+		gap: 10px;
+	}
+	.hero .text .p1 {
+		font-size: 3.0rem;
+		line-height: 50px;
+	}
+
+	h1 {
+	font-size: 1.9rem;}
+
+	.hero .text .p2{
+		margin: auto;
+		width: 50%;
+	}
+
+	.hero .text a{
+		margin: auto;
+		width: 15%;
+	}
+
+	.hero  .svg {
+		display: none;
+	}
+	.hero .text  {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+@media (max-width: 885px) {
+	.contact input{
+	width: 100%;
+}
+	.contact textarea{
+	width: 100%;
+}
+	.contact button{
+	width: 100%;
+}
+
+.iframe {
+	flex-direction: column;
+}
+.iframe .video {
+	width: 100%;
+}
+}
+
+
+@media (max-width: 1063px) {
+	.hero .text .p2{
+		margin: auto;
+		width: 55%;
+	}
+	.hero .text a{
+		font-size: 0.9rem;
+		width: 15%;
+	}
+}
+
+@media (max-width: 983px) {
+	.hero .text .p2 {
+		width: 60%;
+	}
+}
+
+@media (max-width: 907px) {
+	.hero .text .p2 {
+		width: 65%;
+	}
+}
+
+@media (max-width: 837px) {
+	.hero .text .p2 {
+		font-size: 0.9rem;
+	}
+
+	.hero .text .p1 {
+		font-size: 2.5rem;
+	}
+
+	h1 {
+	font-size: 1.7rem;
+}
+}
+
+@media (max-width: 699px) {
+	.hero .text .p1 {
+		width: 100%;
+		font-size: 2rem;
+	}
+
+	h1 {
+	font-size: 1.6rem;}
+
+	.hero .text a {
+		width: 30%;
+		margin-top: 25px;
+	}
+
+	.portext {
+		gap: 5px;
+	}
+
+	.port {
+	
+	padding-bottom: 0px ;
+}
+
+	header .header .text {
+		display: none;
+	}
+
+	
+	.header2 {
+		display: none;
+		flex-direction: column;
+		width: 100%;
+		gap: 20px;
+		height: 100vh;
+		background: rgba(33, 36, 55, 0.3);
+		backdrop-filter: blur(10px);
+		position: fixed;
+		z-index: 99999999999;
+		bottom: 0px;
+		right: 0;
+		font-size: 1rem;
+		cursor: url();
+		align-content: right;
+	}
+
+	.header2 .x {
+		display: flex;
+	}
+
+	header .header .burger{
+		display: flex;
+		color: #ed7d31;
+		fill: #ed7d31;
+		align-items: center;
+		width: 45%;
+		justify-content: right;
+		font-size: 2rem;
+	}
+}
+
+
+@media (max-width: 463px) {
+	.hero .text .p1 {
+		font-size: 1.5rem;
+		line-height: 30px;
+	}
+
+	h1 {
+	font-size: 1.4rem;}
+
+	.hero {
+		padding-top: 130px;
+	}
+
+	.hero .text .p2 {
+		font-size: 0.7rem;
+		
+	}
+}
+
+
+@media (max-width: 380px) {
+	.hero .text .p1 {
+		font-size: 1.2rem;
+		line-height: 30px;
+	}
+
+	h1 {
+	font-size: 1.2rem;}
+
+	.hero {
+		padding-top: 130px;
+	}
+
+	.hero .text .p2 {
+		font-size: 0.7rem;
+		width: 80%;
+		
+	}
+}
+
+
+@media (max-width: 346px) {
+	.hero .text a {
+		font-size:;
+		width: 70%;
+	}
+
+	.header2 {
+		font-size: 0.8rem;
+	}
+}
