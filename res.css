@@ -10,25 +10,30 @@
 	.hero{
 		padding-top: 100px;
 		gap: 50px;
-		display: grid;
+		display: flex;
+		width: 100%;
 		padding-bottom: 50px;
+		
 	}
 	.hero .text .p1 {
-		font-size: 3.0rem;
+		font-size: 3rem;
 		line-height: 50px;
+		text-align: left;
+		
 	}
 
 	h1 {
 	font-size: 1.9rem;}
 
 	.hero .text .p2{
-		margin: auto;
-		width: 50%;
+		text-align: left;
+		width:100%;
 	}
 
 	.hero .text a{
 		margin: auto;
-		width: 15%;
+		width: fit-content;
+		padding: 10px 20px;
 	}
 
 	.hero  .svg {
@@ -37,7 +42,7 @@
 	}
 
 	.hero  .svg img {
-		border-radius: 20px;
+		border-radius: 100%;
 	}
 	.hero .text  {
 		width: 100%;
@@ -56,6 +61,49 @@
 		width: 40%;
 	}
 }
+
+@media (max-width: 1105px) {
+	.hero {
+		flex-direction: column;
+		
+	}
+	.hero .text .p1 {
+		text-align: center;
+	}
+
+	.hero .text .p2 {
+		text-align: center;
+		width: 50%;
+		margin: auto;
+	}
+
+	.hero  .svg img {
+		border-radius: 30px;
+	}
+}
+
+@media (max-width: 1063px) {
+	.hero .text .p2{
+		margin: auto;
+		width: 55%;
+	}
+
+}
+
+
+@media (max-width: 983px) {
+	.hero .text .p2 {
+		width: 60%;
+	}
+}
+
+
+@media (max-width: 907px) {
+	.hero .text .p2 {
+		width: 65%;
+	}
+}
+
 
 
 @media (max-width: 885px) {
@@ -78,32 +126,9 @@
 }
 
 
-@media (max-width: 1063px) {
-	.hero .text .p2{
-		margin: auto;
-		width: 55%;
-	}
-	.hero .text a{
-		font-size: 0.9rem;
-		width: 15%;
-	}
-}
-
-@media (max-width: 983px) {
-	.hero .text .p2 {
-		width: 60%;
-	}
-}
-
-@media (max-width: 907px) {
-	.hero .text .p2 {
-		width: 65%;
-	}
-}
-
 @media (max-width: 837px) {
 	.hero .text .p2 {
-		font-size: 0.9rem;
+		
 	}
 
 	.hero .text .p1 {
@@ -124,10 +149,10 @@
 	h1 {
 	font-size: 1.6rem;}
 
-	.hero .text a {
-		width: 30%;
-		margin-top: 25px;
+	.hero .text {
+		gap: 20px;
 	}
+
 
 	.portext {
 		gap: 5px;
@@ -190,7 +215,7 @@
 	}
 
 	.hero .text .p2 {
-		font-size: 0.7rem;
+		
 		
 	}
 }
@@ -198,7 +223,7 @@
 
 @media (max-width: 380px) {
 	.hero .text .p1 {
-		font-size: 1.2rem;
+		font-size: 24px;
 		line-height: 30px;
 	}
 
@@ -209,8 +234,8 @@
 		padding-top: 130px;
 	}
 
-	.hero .text .p2 {
-		font-size: 0.7rem;
+	.hero .text .p2 {	
+	
 		width: 80%;
 		
 	}
@@ -219,7 +244,6 @@
 
 @media (max-width: 346px) {
 	.hero .text a {
-		font-size:;
 		width: 70%;
 	}
 

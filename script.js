@@ -29,3 +29,11 @@ function contact() {
 		const header2 = document.getElementById ('header2')
 		header2.style.display = 'none' 
 }
+
+{
+	/*
+	SIDE BAR
+	*/
+
+	
+}
