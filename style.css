@@ -1,8 +1,9 @@
 html {
 	/*cursor: url('mouse.PNG'), auto;*/
-	background: #212437;
+	background: #12141f;
 	font-family: poppins;
 	scroll-behavior: smooth;
+	position: relative;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
@@ -21,7 +22,7 @@ body {
 	position: relative;
 	background-image: url('line.webp');
 	backdrop-filter: opacity(0.1);
-	background-color: #212437;
+	background: #12141f;
 }
 .pagelink {
 	display: none;
@@ -46,7 +47,7 @@ header {
 	position: relative;
 	margin: auto;
 	width: 100%;
-	background: #212437;
+	background: #12141f;
 	z-index: 9999999;
 	
 
@@ -61,62 +62,11 @@ header .header {
 	border-bottom: 1px solid #2b2e41;
 	align-items: center;
 	max-width: 1360px;
-	background: #212437;
+	background: #12141f;
 	box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.3);
 }
 
-.header2 {
-	display: none;
-	margin-top: 0;
-	margin-bottom: 0;
 
-}
-
-.header2 .text {
-	display: grid;
-	width: 90%;
-	height: 20vh;
-	margin: auto;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding: 0;
-	bottom: 0px;
-	text-align: justify;
-	gap: 30px;
-	bottom: 250px;
-	position: relative;
-	bottom:35%;
-}
-
-.header2 .text a {
-	border-top: #ee843c solid 1px;
-	border-bottom: #ee843c solid 1px;
-	width: 50%;
-	padding: 10px;
-	background-color: rgba(0, 0, 0, 0.1);
-}
-
-.header2 .x {
-	left: 70%;
-	width: 20%;
-	position: relative;
-	bottom:28%;
-	display: none;
-	justify-content: center;
-	margin-top: 0;
-	margin-bottom: 0;
-	/*cursor: url('pointer.PNG'), auto;*/
-	background: rgba(33, 36, 55, 1);
-	padding: 5px;
-	border-radius: 10px;
-	filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.5));
-	text-align: center;
-	/*cursor: url('pointer.PNG'), auto;*/
-
-
-
-
-}
 
 
 
