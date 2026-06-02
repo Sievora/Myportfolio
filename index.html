@@ -13,8 +13,10 @@
     <title>Sievora - Portfolio</title>
   </head>
   <body>
+
+    
     <header>
-      <div class="header">
+      <div class="header" id="header">
         <div class="logo"><img src="logo.png"></div>
         <div class="text">
         <a href="#home" >Home</a>
@@ -22,10 +24,75 @@
         <a href="#blog">Blog</a>
         <a href="#contact">Contact&nbsp;Us</a>
       </div>
-      <div class="burger" onclick="showside()"><i class="fas fa-bars"></i></div>
+      <div class="burger" onclick="showside()"><svg width="35" class="openNav" onclick="openNav()" viewBox="0 0 24 24" fill="none" stroke="#fc5910" stroke-width="2" stroke-linecap="round">
+            <path d="M3 6H21"></path>
+            <path d="M3 12H21"></path>
+            <path d="M3 18H21"></path>
+            </svg></div>
       </div>
     </header>
+    
+    <nav class="" id="nav">
+      
+      <div class="media">
+        <!-- Facebook -->
+        
+        <a href="https://web.facebook.com/SuccessSie" target="_blank" aria-label="Facebook">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <rect width="24" height="24" rx="6" fill="#1877F2"/>
+            <path d="M14.5 8H13.2C12.7 8 12.5 8.2 12.5 8.7V10H14.5L14.2 12H12.5V18H10.2V12H8.8V10H10.2V8.4C10.2 6.9 11 6 13 6H14.5V8Z" fill="white"/>
+          </svg> <p>Facebook</p>
+        </a>
+       
 
+        <!-- LinkedIn -->
+       
+        <a href="https://www.linkedin.com/in/sievora-company-127277404/" target="_blank" aria-label="LinkedIn">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <rect width="24" height="24" rx="6" fill="#0A66C2"/>
+            <path d="M7.5 10H5V18H7.5V10ZM6.25 6C5.4 6 5 6.5 5 7.2C5 7.9 5.4 8.4 6.2 8.4C7.05 8.4 7.45 7.9 7.45 7.2C7.45 6.5 7.05 6 6.25 6ZM19 13.5C19 11.5 17.8 10 15.8 10C14.7 10 14.1 10.6 13.8 11V10H11.5V18H14V13.5C14 12.6 14.5 12 15.3 12C16.1 12 16.5 12.6 16.5 13.5V18H19V13.5Z" fill="white"/>
+          </svg><p>Linkedin</p>
+        </a>
+     
+
+        <!-- WhatsApp -->
+       
+        <a href="https://wa.me/2347042780038" target="_blank" aria-label="WhatsApp">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <rect width="24" height="24" rx="6" fill="#25D366"/>
+            <path d="M12 6C8.7 6 6 8.6 6 11.9C6 13 6.3 14.1 6.9 15L6 18L9.1 17.1C10 17.6 11 17.9 12 17.9C15.3 17.9 18 15.3 18 12C18 8.7 15.3 6 12 6ZM15.2 14.3C15.1 14.6 14.5 14.9 14.2 15C13.9 15.1 13.5 15.1 13.1 15C12.1 14.7 11.2 14.1 10.4 13.3C9.6 12.5 9 11.6 8.7 10.6C8.6 10.2 8.6 9.8 8.7 9.5C8.8 9.2 9.1 8.6 9.4 8.5C9.6 8.4 9.8 8.4 10 8.4C10.1 8.4 10.3 8.5 10.4 8.7C10.6 9 11 9.8 11.1 10C11.2 10.2 11.2 10.4 11.1 10.5C11 10.6 10.9 10.7 10.8 10.8C10.7 10.9 10.6 11 10.7 11.2C10.9 11.6 11.2 12 11.6 12.4C12 12.8 12.4 13.1 12.8 13.3C13 13.4 13.1 13.3 13.2 13.2C13.3 13.1 13.4 13 13.5 12.9C13.6 12.8 13.8 12.8 14 12.9C14.2 13 15 13.4 15.3 13.6C15.5 13.7 15.6 13.9 15.6 14C15.5 14.1 15.4 14.2 15.2 14.3Z" fill="white"/>
+          </svg><p>Whatsapp</p>
+        </a>
+      
+
+        <!-- Gmail -->
+        
+        <a href="mailto:sievoracompany@gmail.com" aria-label="Email">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <rect width="24" height="24" rx="6" fill="#EA4335"/>
+            <path d="M6 8L12 13L18 8V16H6V8Z" fill="white"/>
+            <path d="M6 8L12 13L18 8" stroke="white" stroke-width="1.5"/>
+          </svg><p>Gmail</p>
+        </a>
+       
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@sievorathedev" target="_blank" aria-label="TikTok">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <rect width="24" height="24" rx="6" fill="#000"/>
+            <path d="M14 3V14.2C14 15.6 12.9 16.7 11.5 16.7C10.1 16.7 9 15.6 9 14.2C9 12.8 10.1 11.7 11.5 11.7C11.8 11.7 12.1 11.8 12.4 11.9V9.5C12.1 9.4 11.8 9.3 11.5 9.3C8.9 9.3 7 11.2 7 13.8C7 16.4 8.9 18.3 11.5 18.3C14.1 18.3 16 16.4 16 13.8V8.5C17 9.3 18.2 9.8 19.5 9.8V7.5C17.7 7.4 16.1 6.2 15.4 4.5C15.2 4 15.1 3.5 15.1 3H14Z" fill="white"/>
+          </svg><p>TikTok</p>
+        </a>
+
+      </div>
+
+      <div class="close" onclick="hideside()">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+        <rect width="24" height="24" rx="6" fill="#111"/>
+        <path d="M8 8L16 16M16 8L8 16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg> <p>Close Menu</p>
+    </div>
+    </nav>
 
 
 
@@ -44,7 +111,13 @@
         <p class="p2">Planning and creating websites and mobile web applications, bringing them to life using code and precise executive.</p>
         <a href="#contact">HIRE NOW</a>
       </div>
-      <div class="svg" ><img src="myphotowebp.webp"></div>
+      <div class="svg" >
+        <img src="myphotowebp.webp">
+        <div class="info">
+          <p>Name: <span>Success I. Ezebuchi</span></p>
+        <p>Role: <span>Website Developer</span></p>
+        </div>
+      </div>
     </div>
 
     <div class="line"  id="blog" ></div>
@@ -109,7 +182,7 @@
       <button type="submit">Send <i class="fas fa-paper-plane"></i> </button>
     </form>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
   </body>
   </html>

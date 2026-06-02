@@ -1,10 +1,4 @@
-html {
-	/*cursor: url('mouse.PNG'), auto;*/
-	background: #12141f;
-	font-family: poppins;
-	scroll-behavior: smooth;
-	position: relative;
-}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
@@ -16,13 +10,13 @@ html {
 }
 
 body {
-	max-width: 1360px;
-	margin: auto;
+
 	color: #f4eef2;
-	position: relative;
 	background-image: url('line.webp');
-	backdrop-filter: opacity(0.1);
+	
 	background: #12141f;
+	font-family: poppins;
+	scroll-behavior: smooth;
 }
 .pagelink {
 	display: none;
@@ -33,28 +27,24 @@ a {
 	text-decoration: none;
 }
 
-.logo {
-	width: 45%;
-	display: flex;
-	justify-content: left;
-}
-.logo img {
-	width: 80px;
-}
-header {
-	display: flex;
-	justify-content: center;
-	position: relative;
-	margin: auto;
-	width: 100%;
-	background: #12141f;
-	z-index: 9999999;
-	
 
-}
-header .header {
-	display: flex;
+header {
+  
+    background: #12141f;
 	position: fixed;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    margin: auto;
+    max-width: 1360px;
+    z-index: 9999999;
+    filter: drop-shadow(0px 0px 30px rgba(0,0,0, 0.1));
+    
+}
+
+header .header {
+	
+	display: flex;
 	width: 100%;
 	margin: auto;
 	justify-content: center;
@@ -64,6 +54,16 @@ header .header {
 	max-width: 1360px;
 	background: #12141f;
 	box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.3);
+}
+
+
+.logo {
+	width: 45%;
+	display: flex;
+	justify-content: left;
+}
+.logo img {
+	width: 80px;
 }
 
 
@@ -86,7 +86,7 @@ header .header .text a {
 }
 
 header .header .text a:hover {
-	background: #2b2e41;
+	background: #12141f;
 	border-radius: 10px;
 	transform: translateY(-3px);
 	text-decoration: none;
@@ -97,7 +97,7 @@ header .header .text a:hover {
 }
 
 header .header .text a:active {
-	background: #2b2e41;
+	background: #12141f;
 	border-radius: 10px;
 	scale: 1.15;
 	text-decoration: none;
@@ -109,6 +109,91 @@ header .header .text a:active {
 	
 }
 
+nav {
+	position: fixed;
+	z-index: 999999999;
+	top: 80px;
+	right: -200px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #12141f;
+	width: fit-content;
+	max-width: 1360px;
+	display: grid;
+	gap: 30px;
+	border-radius: 20px;
+	justify-content: right;
+	filter: blur(10px);
+
+}
+
+
+
+
+.media {
+	width: 100%;
+	margin: auto;
+	display: grid;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+
+
+.media a {
+	display: flex;
+	
+	align-items: center;
+	gap: 30px;
+	
+}
+
+
+nav .close {
+	display: flex;
+	align-items: center;
+	
+	gap: 10px;
+	border: 1px #ed7e33 solid;
+	border-radius: 10px;
+	padding: 10px;
+	width: fit-content;
+
+	justify-content: space-between;
+}
+
+.navopen {
+	animation: navopen 0.5s ease;
+}
+
+@keyframes navopen {
+	0% {
+		opacity: 0;
+		transform: translateY(-200px);
+	}
+	100% {
+		opacity: 1;
+		right: 20px;;
+	}
+}
+
+.navclose {
+	animation: navclose 0.5s ease;
+}
+
+@keyframes navclose {
+	0% {
+		opacity: 1;
+		right: 20px;
+	}
+	100% {
+		opacity: 0;
+		right: -200px;
+	}
+}
+
 .hero {
 	padding-top: 150px ;
 	width: 90%;
@@ -117,7 +202,7 @@ header .header .text a:active {
 	align-items: center;
 	justify-content: space-between;
 	position: relative;
-
+	
 }
 
 .hero .text {
@@ -201,7 +286,7 @@ header .header .text a:active {
 	font-weight: 500;
 	padding: 10px 0;
 	margin-top:15px ;
-	background: #2b2e41;
+	background: #12141f;
 	border: 1px solid #ee843c;
 	color: #ee843c;
 	filter: drop-shadow(0px  0px 10px rgba(255, 255, 255, 0.1));
@@ -228,13 +313,29 @@ header .header .text a:active {
 .hero .svg {
 	width: 35%;
 	display: flex;
+	flex-direction: column;
 	justify-content: right;
 	align-items: center;
 	animation: sym 2s ease infinite;
-	
-	
+	color: #ee843c;
+	gap: 20px;
+	position: relative;
 }
 
+.hero .svg .info {
+	width: fit-content;
+	text-align: center;
+	background-color: #000;
+	padding: 10px ;
+	border-radius: 10px;
+	z-index: 2147;
+	position: absolute;
+	bottom:0;
+}
+
+.hero .svg span {
+	color: #fff;
+}
 .hero .svg img {
 	width: 100%;
 	filter: drop-shadow(0px 0px 40px rgba(238, 132, 60, 0.3));
@@ -403,4 +504,3 @@ textarea {
 }
 
 
-/----------SIDE BAR----------/

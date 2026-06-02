@@ -117,6 +117,14 @@
 	width: 100%;
 }
 
+.hero .svg .info {
+	width: 100%;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
 .iframe {
 	flex-direction: column;
 }
@@ -168,26 +176,7 @@
 	}
 
 	
-	.header2 {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		gap: 20px;
-		height: 100vh;
-		background: rgba(33, 36, 55, 0.3);
-		backdrop-filter: blur(10px);
-		position: fixed;
-		z-index: 99999999999;
-		bottom: 0px;
-		right: 0;
-		font-size: 1rem;
-		cursor: url();
-		align-content: right;
-	}
-
-	.header2 .x {
-		display: flex;
-	}
+	
 
 	header .header .burger{
 		display: flex;
@@ -247,7 +236,5 @@
 		width: 70%;
 	}
 
-	.header2 {
-		font-size: 0.8rem;
-	}
+
 }
