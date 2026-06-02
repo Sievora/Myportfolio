@@ -12,9 +12,9 @@
 body {
 
 	color: #f4eef2;
-	background-image: url('line.webp');
+	background-image: url('bk.webp');
 	
-	background: #12141f;
+	background-color: #12141f;
 	font-family: poppins;
 	scroll-behavior: smooth;
 }
@@ -30,7 +30,8 @@ a {
 
 header {
   
-    background: #12141f;
+    background-color: #12141f;
+
 	position: fixed;
     width: 100%;
     display: grid;
@@ -52,7 +53,8 @@ header .header {
 	border-bottom: 1px solid #2b2e41;
 	align-items: center;
 	max-width: 1360px;
-	background: #12141f;
+	background-color: #12141f;
+	background-image: url('line.webp');
 	box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.3);
 }
 
@@ -126,6 +128,8 @@ nav {
 	border-radius: 20px;
 	justify-content: right;
 	filter: blur(10px);
+	background-image: url('bk.webp');
+	border: 1px solid #00000028;
 
 }
 
