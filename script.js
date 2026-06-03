@@ -1,5 +1,6 @@
 const nav = document.getElementById("nav");
 const whatsapp = document.getElementById("whatsapp");
+const viewsocial = document.getElementById("viewsocial");
 
 function showside(){
     nav.style.right = "20px";
@@ -15,5 +16,14 @@ function hideside(){
     whatsapp.style.display = "flex";
 }
 
+function showsocial(){
+    viewsocial.style.top = "40px";
+    viewsocial.style.opacity = "1";
+}
 
-/*gsap.to(nav,  {y: -200, duration: 1})*/
+function hidesocial(){
+    viewsocial.style.top = "60px";
+    viewsocial.style.opacity = "0";
+}
+
+//gsap.to(nav,  {y: -200, duration: 1}) 

@@ -57,9 +57,7 @@
 		padding: 0px 0;
 	}
 
-	.uline {
-		width: 40%;
-	}
+
 }
 
 @media (max-width: 1105px) {
@@ -123,6 +121,10 @@
 	right: 20px;
 }
 
+.viewsocial {
+	display:none;
+}
+
 .hero .svg .info {
 	width: 100%;
 	border-top-left-radius: 0px;
@@ -172,14 +174,15 @@
 		gap: 10px;
 	}
 
-	.portext {
-		gap: 5px;
+	.proimageandlink {
+		flex-direction: column;
+		gap: 20px;
 	}
 
-	.port {
-	
-	padding-bottom: 0px ;
-}
+	.proimageandlink .childpro {
+		width: 100%;
+		gap: 5px;
+	}
 
 	header .header .text {
 		display: none;

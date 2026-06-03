@@ -1,12 +1,15 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-
+html {
+	scroll-behavior: smooth;
+}
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	transition: 0.3s ease;
 }
 
 body {
@@ -118,7 +121,7 @@ header .header .text a:active {
 .viewsocial{
 	position: absolute;
 	z-index: 9999;
-	top: 40px;
+	top: 60px;
 	right: -25px;
 	width: fit-content;
 	background-color: grey;
@@ -126,7 +129,8 @@ header .header .text a:active {
 	border-radius: 10px;
 	color: #000;
 	font-size: 12px;
-	display: none;
+	opacity: 0;
+	transition: 0.5s ease;
 }
 
 nav {
@@ -400,6 +404,73 @@ nav .close {
 }
 
 
+.project {
+	width: 90%;
+	margin: auto;
+	display: grid;
+	gap: 40px;
+}
+
+.protext {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.p {
+	font-size: 1rem;
+	color: #fff;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: 500;
+	color: #ee843c;
+}
+
+.protext .uline {
+	padding: 3px;
+	background-color: #ee843c;
+	width: 100%;
+	border-radius: 50px;
+}
+
+
+.proimageandlink {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+}
+
+.proimageandlink .childpro {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.proimageandlink .childpro a {
+	width: 100%;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #000;
+	padding: 10px 0;
+}
+
+.proimageandlink .childpro img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
 .line {
 	border-bottom: 3px solid #2b2e41;
 	width: 100%;
@@ -440,7 +511,7 @@ h1 {
 .uline {
 	padding: 3px;
 	background-color: #ee843c;
-	width: 18%;
+	width: 100%;
 	border-radius: 50px;
 }
 
