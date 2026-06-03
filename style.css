@@ -39,23 +39,24 @@ header {
     margin: auto;
     max-width: 1360px;
     z-index: 9999999;
-    filter: drop-shadow(0px 0px 30px rgba(0,0,0, 0.1));
+box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid #2b2e41;
     
 }
 
 header .header {
 	
 	display: flex;
-	width: 100%;
+	width: 90%;
 	margin: auto;
-	justify-content: center;
+	justify-content: space-between;
 	padding: 15px 0;
-	border-bottom: 1px solid #2b2e41;
+
 	align-items: center;
 	max-width: 1360px;
 	background-color: #12141f;
 	background-image: url('line.webp');
-	box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.3);
+	
 }
 
 
@@ -106,9 +107,26 @@ header .header .text a:active {
 }
 
 .burger {
-	display: none;
+	display: flex;
 	/*cursor: url('pointer.PNG'), auto;*/
-	
+	cursor: pointer;
+	position: relative;
+	flex-direction: column;
+	place-items: center;
+}
+
+.viewsocial{
+	position: absolute;
+	z-index: 9999;
+	top: 40px;
+	right: -25px;
+	width: fit-content;
+	background-color: grey;
+	padding: 5px;
+	border-radius: 10px;
+	color: #000;
+	font-size: 12px;
+	display: none;
 }
 
 nav {
@@ -164,7 +182,7 @@ nav .close {
 	border-radius: 10px;
 	padding: 10px;
 	width: fit-content;
-
+	cursor: pointer;
 	justify-content: space-between;
 }
 
@@ -196,6 +214,26 @@ nav .close {
 		opacity: 0;
 		right: -200px;
 	}
+}
+
+
+.whatsapp {
+	position: fixed;
+	z-index: 99999;
+	bottom: 40px;
+	right: 20px;
+	
+	flex-direction: column;
+	width: fit-content;
+	justify-content: center;
+	place-items: center;
+	text-align: center;
+	font-size: 10px;
+	border-radius: 10px;
+	gap: 5px;
+	display: none;
+	transition: 0.7s ease;
+	
 }
 
 .hero {
