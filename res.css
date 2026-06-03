@@ -139,6 +139,11 @@
 .iframe .video {
 	width: 100%;
 }
+
+.contactmain {
+	flex-direction: column;
+	padding-bottom: 50px;
+}
 }
 
 
