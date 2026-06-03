@@ -107,12 +107,12 @@ header .header .text a:active {
 }
 
 .burger {
-	display: flex;
+	display: grid;
 	/*cursor: url('pointer.PNG'), auto;*/
 	cursor: pointer;
 	position: relative;
-	flex-direction: column;
 	place-items: center;
+	width: fit-content;
 }
 
 .viewsocial{
