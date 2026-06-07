@@ -110,7 +110,7 @@ header .header .text a:active {
 }
 
 .burger {
-	display: grid;
+	display: none;
 	/*cursor: url('pointer.PNG'), auto;*/
 	cursor: pointer;
 	position: relative;
@@ -441,10 +441,11 @@ h1 {
 	display: flex;
 	justify-content: space-between;
 	align-items: start;
+	gap: 20px;
 }
 
 .proimageandlink .childpro {
-	width: 45%;
+	width: fit-content;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
