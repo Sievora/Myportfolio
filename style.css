@@ -110,7 +110,7 @@ header .header .text a:active {
 }
 
 .burger {
-	display: none;
+	display: flex;
 	/*cursor: url('pointer.PNG'), auto;*/
 	cursor: pointer;
 	position: relative;
@@ -131,6 +131,7 @@ header .header .text a:active {
 	font-size: 12px;
 	opacity: 0;
 	transition: 0.5s ease;
+	
 }
 
 nav {
